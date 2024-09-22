@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #00093d;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flower {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.petal {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at 30% 30%, #ffeb3b, #fbc02d);
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform-origin: 50% 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.petal:nth-child(1) {
+  transform: rotate(0deg) translate(50px);
+}
+
+.petal:nth-child(2) {
+  transform: rotate(60deg) translate(50px);
+}
+
+.petal:nth-child(3) {
+  transform: rotate(120deg) translate(50px);
+}
+
+.petal:nth-child(4) {
+  transform: rotate(180deg) translate(50px);
+}
+
+.petal:nth-child(5) {
+  transform: rotate(240deg) translate(50px);
+}
+
+.petal:nth-child(6) {
+  transform: rotate(300deg) translate(50px);
+}
+
+.name {
+  font-size: 24px;
+  color: #ffbb00;
+  font-family: "Gowun Batang", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
